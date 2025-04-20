@@ -6,3 +6,26 @@ class GameSprite(sprite.Sprite): #Основной класс спрайта
         self.rect = self.image.get_rect()
         self.rect.x = player_x
         self.rect.y = player_y
+
+speed_x = 3
+speed_y = 3
+
+while game:
+    if finish != True
+    ball.rect.x += speed_x
+    ball.rect.y += speed_y
+
+if ball.rect.y > win_height-50
+    or ball.rect.y < 0:
+        speed_y *= -1
+
+
+
+font1 = font.Font(None, 35)
+lose1 = font1.render(
+    'PLAYER 1 LOSE!', True, (180, 0, 0))
+
+while game:
+    if ball.rect.x < 0:
+        finish = True
+        window.blit(losel, (200, 200))
